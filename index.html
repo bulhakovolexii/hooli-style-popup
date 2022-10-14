@@ -5,53 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
     <title>Hooli-style popup</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <nav class="navbar">
             <div class="navbar__container">
-                <a href="#" class="name__link">Olexii Bulhakov</a>
-                <div class="menu__container">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#">Mail</a></li>
-                        <li class="menu__item"><a href="#">Images</a></li>
-                        <li class="menu__item">
-                            <label>
-                                <input type="checkbox" class="popup__input">
-                                <span class="popup__button"></span>
-                                <div class="popup__window"></div>
-                            </label>
-                        </li>
-                        <li class="menu__item"><a href="#" class="avatar__photo"></a></li>
-                    </ul>
+                <div class="navbar__name"><a href="#">Olexii Bulhakov</a></div>
+                <div class="navbar__menu">
+                    <a href="#" class="mail__link">Mail</a>
+                    <a href="#" class="images__link">Images</a>
+                    <label class="popup__btn">
+                        <input type="checkbox" class="popup__check">
+                        <span><img src="./icons/cubes.svg" alt="Popup Image"></span>
+                    </label>
+
                 </div>
             </div>
         </nav>
-        <main class="content">
-            <div class="main__container">
-                <div class="description">
-                    <h1 class="description__title">Web developer and software engineer</h1>
-                    <p class="description__subtitle">
-                        Enterprise software solutions for business growth and performance
-                    </p>
-                    <div class="descripion__btn">Wiew more</div>
-                </div>
-                <img src="./icons/spring.png" alt="Spring">
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                design by Polina Bulhakova Olexii Bulhakov
-            </div>
-        </footer>
+        <main class="main">Main</main>
+        <footer class="footer">Footer</footer>
     </div>
-
 </body>
 
 </html>
