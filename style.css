@@ -12,7 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    position: fixed;
     background: linear-gradient(219.76deg, #C27DFC 25.63%, rgba(234, 235, 237, 0) 86.87%);
 }
 
