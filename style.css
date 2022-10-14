@@ -3,7 +3,9 @@
 html,
 body {
     margin: 0px;
-    height: 100%;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
@@ -12,7 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    position: fixed;
     background: linear-gradient(219.76deg, #C27DFC 25.63%, rgba(234, 235, 237, 0) 86.87%);
+    background-attachment: fixed;
 }
 
 /* navigation */
