@@ -20,6 +20,8 @@ a {
     background: linear-gradient(219.76deg, #C27DFC 25.63%, rgba(234, 235, 237, 0) 86.87%);
 }
 
+/* Navigation */
+
 .navbar {
     height: 3em;
     box-shadow: 0px 0px 10px black;
@@ -31,7 +33,29 @@ a {
 .navbar__container {
     width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.navbar__name {
+    text-align: center;
+}
+
+.navbar__name:hover,
+.navbar__name:focus-within>a {
+    text-shadow: 0px 0px 5px black;
+    outline: none;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.mail__link,
+.images__link,
+.popup__btn {
+    margin-left: 0.5em;
 }
 
 /* Main Content */
