@@ -13,11 +13,18 @@ a {
     color: black;
 }
 
+a:hover,
+a:focus {
+    outline: none;
+    text-shadow: 0px 0px 5px black;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     background: linear-gradient(219.76deg, #C27DFC 25.63%, rgba(234, 235, 237, 0) 86.87%);
+    background-attachment: fixed;
 }
 
 /* Navigation */
@@ -37,25 +44,98 @@ a {
     justify-content: space-between;
 }
 
-.navbar__name {
+/* Menu */
+
+.name__link {
     text-align: center;
+    font-weight: 600;
 }
 
-.navbar__name:hover,
-.navbar__name:focus-within>a {
-    text-shadow: 0px 0px 5px black;
-    outline: none;
-}
-
-.navbar__menu {
+.menu__list {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
 }
 
-.mail__link,
-.images__link,
-.popup__btn {
+.menu__item {
     margin-left: 0.5em;
+    font-weight: 600;
+}
+
+.popup__btn {
+    display: block;
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+.popup__btn img {
+    width: 1em;
+    height: 1em;
+}
+
+.popup__btn:hover,
+.popup__btn:focus-within {
+    background-color: rgba(233, 221, 244, 60%);
+    outline: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+.popup__check {
+    position: absolute;
+    appearance: none;
+}
+
+.menu__avatar {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.menu__avatar img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.menu__avatar:hover,
+.menu__avatar:focus {
+    outline: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    outline-offset: 0px;
+}
+
+/* Popup */
+
+.popup__check:checked~.popup-menu {
+    display: flex;
+}
+
+.popup-menu {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 3em;
+    background-color: aliceblue;
+    width: 322px;
+    height: 507px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.popup-menu__list {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
 }
 
 /* Main Content */
