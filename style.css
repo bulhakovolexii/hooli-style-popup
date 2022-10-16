@@ -138,7 +138,7 @@ a:focus {
 
 .popup-menu__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
     margin-block-start: 0px;
@@ -155,8 +155,8 @@ a:focus {
 
 .popup-menu__link {
     display: inline-block;
-    width: 92px;
-    height: 92px;
+    width: 86px;
+    height: 86px;
     font-size: 14px;
 }
 
@@ -171,7 +171,7 @@ a:focus {
     box-shadow: 0px 0px 10px black;
 }
 
-/* Castom scrollbar */
+/* Custom scrollbar */
 
 /* width */
 .popup-menu::-webkit-scrollbar {
