@@ -116,7 +116,7 @@ a:focus {
 /* Popup */
 
 .popup__check:checked~.popup-menu {
-    display: flex;
+    display: block;
 }
 
 .popup-menu {
@@ -129,10 +129,16 @@ a:focus {
     height: 507px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px black;
+    overflow-y: scroll;
+}
+
+.popup-menu__container {
+    margin: 1em;
 }
 
 .popup-menu__list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin-block-start: 0px;
     margin-block-end: 0px;
