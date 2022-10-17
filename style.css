@@ -234,13 +234,51 @@ a:focus {
 
 .main {
     flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
 }
 
 .main__container {
-    margin-top: 5em;
     max-width: 90%;
+    margin: 3em auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.greeting {
+    max-width: 600px;
+}
+
+.greeting__title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.greeting__descr {
+    font-size: 18px;
+    margin-bottom: 4em;
+}
+
+.greeting__btn {
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+.greeting__btn:hover,
+.greeting__btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px white;
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.spring__container {
+    display: flex;
+    align-items: center;
 }
 
 /* Footer */
@@ -250,4 +288,5 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
