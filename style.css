@@ -87,7 +87,8 @@ a:focus {
     cursor: pointer;
 }
 
-.popup__check {
+.popup__check,
+.popup-more__check {
     position: absolute;
     appearance: none;
 }
@@ -133,7 +134,10 @@ a:focus {
 }
 
 .popup-menu__container {
-    margin: 1em;
+    margin: 1em 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .popup-menu__list {
@@ -171,13 +175,41 @@ a:focus {
     box-shadow: 0px 0px 10px black;
 }
 
+.popup-more__btn {
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 1em;
+}
+
+.popup-more__btn:hover,
+.popup-more__btn:focus-within {
+    outline: 2px solid black;
+}
+
+.popup-more__list {
+    display: none;
+}
+
+.popup-more__check:checked~.popup-more__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+    font-weight: normal;
+}
+
+.popup-more__check:checked~.popup-more__btn {
+    display: none;
+}
+
 /* Custom scrollbar */
 
 /* width */
 .popup-menu::-webkit-scrollbar {
     width: 6px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 /* Track */
@@ -190,7 +222,6 @@ a:focus {
 /* Handle */
 .popup-menu::-webkit-scrollbar-thumb {
     background: #888;
-
 }
 
 /* Handle on hover */
