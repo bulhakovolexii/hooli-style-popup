@@ -261,6 +261,7 @@ a:focus {
 }
 
 .greeting__btn {
+    display: inline-block;
     font-size: 18px;
     padding: 1em;
     border: 2px solid black;
