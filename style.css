@@ -40,6 +40,7 @@ a:focus {
 .navbar__container {
     width: 90%;
     display: flex;
+    column-gap: 0.5em;
     align-items: center;
     justify-content: space-between;
 }
@@ -54,6 +55,7 @@ a:focus {
 
 .menu__list {
     display: flex;
+    column-gap: 0.5em;
     align-items: center;
     list-style-type: none;
     margin-block-start: 0px;
@@ -62,7 +64,7 @@ a:focus {
 }
 
 .menu__item {
-    margin-left: 0.5em;
+    /* margin-left: 0.5em; */
     font-weight: 600;
 }
 
@@ -240,6 +242,7 @@ a:focus {
     max-width: 90%;
     margin: 3em auto 0;
     display: flex;
+    column-gap: 4em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -279,9 +282,7 @@ a:focus {
 }
 
 .spring__container {
-    display: flex;
-    align-items: center;
-    margin: 2em;
+    align-self: center;
 }
 
 /* Footer */
